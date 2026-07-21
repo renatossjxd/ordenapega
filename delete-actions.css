@@ -1,0 +1,11 @@
+.danger-button {
+  border: 1px solid #e8c5bf;
+  background: #fff5f3;
+  color: #a33427;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-weight: 800;
+}
+.danger-button:hover { background: #fee9e5; }
+.item .remove-item { font-size: 0; position: relative; }
+.item .remove-item:after { content: '×'; font-size: 20px; }
