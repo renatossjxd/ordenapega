@@ -9,3 +9,23 @@
 .pdf-document .document-lines div {
   break-inside: avoid;
 }
+
+.pdf-document .quote-paper {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 6mm;
+}
+
+.pdf-document .document-head,
+.pdf-document .quote-client,
+.pdf-document .quote-row,
+.pdf-document .document-total,
+.pdf-document .quote-notes,
+.pdf-document .quote-footer {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.pdf-document .quote-title { margin-top: 18px; }
+.pdf-document .quote-table { margin: 18px 0; }
