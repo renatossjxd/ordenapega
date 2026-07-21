@@ -1,0 +1,62 @@
+#quoteDialog {
+  width: min(96%, 760px);
+  max-height: 94vh;
+  overflow: auto;
+  background: #f4f5f1;
+}
+
+#quoteDocument { padding: 18px; }
+
+.quote-paper {
+  background: #fff;
+  border: 1px solid #e3e6df;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 16px 45px #10251e12;
+}
+
+.quote-paper .document-head { align-items: flex-start; }
+.quote-brand { display: flex; gap: 14px; align-items: flex-start; }
+.quote-brand img { width: 72px; height: 62px; border-radius: 10px; }
+.quote-brand h2 { margin: 0 0 5px; font-size: 23px; color: var(--green); }
+.quote-brand small { color: var(--muted); line-height: 1.55; }
+.quote-meta { min-width: 180px; text-align: right; }
+.quote-meta strong { display: block; color: var(--green); font-size: 18px; }
+.quote-meta span { display: block; color: var(--muted); font-size: 12px; margin-top: 6px; }
+.quote-status { display: inline-block!important; width: auto!important; padding: 6px 10px; border-radius: 999px; margin-bottom: 10px; background: #eef3ef; color: var(--green)!important; font-size: 10px!important; font-weight: 900; letter-spacing: .5px; }
+.quote-title { margin: 27px 0 17px; font-size: 24px; letter-spacing: -.5px; }
+.quote-client { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; padding: 16px; background: #f6f7f3; border-radius: 13px; }
+.quote-client small { display: block; color: var(--muted); margin-bottom: 5px; }
+.quote-client b { display: block; }
+.quote-client span { color: #4f5d56; font-size: 12px; line-height: 1.5; }
+.quote-table { margin: 24px 0; }
+.quote-row { display: grid; grid-template-columns: 1fr 70px 110px 120px; gap: 10px; align-items: center; padding: 11px 7px; border-bottom: 1px solid #eceee9; }
+.quote-row.header { color: var(--muted); font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: .6px; }
+.quote-row span:not(:first-child),.quote-row b { text-align: right; }
+.document-total { margin-left: auto; width: min(100%, 310px); padding: 15px 0 4px; }
+.document-total span,.document-total strong { display: flex; justify-content: space-between; padding: 5px 0; }
+.document-total strong { margin-top: 6px; padding-top: 12px; border-top: 2px solid var(--green); color: var(--green); font-size: 24px; }
+.quote-notes { margin-top: 22px; padding: 14px 16px; border-left: 3px solid var(--lime); background: #fafbf6; }
+.quote-notes b { display: block; margin-bottom: 5px; }
+.quote-footer { margin-top: 28px; padding-top: 14px; border-top: 1px solid #e9ebe6; color: var(--muted); font-size: 10px; display: flex; justify-content: space-between; gap: 15px; }
+.quote-controls { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+.quote-controls label { margin: 0; background: #fff; border-radius: 12px; padding: 10px 12px; }
+.quote-controls select { width: 100%; border: 0; background: transparent; color: var(--ink); font-weight: 800; margin-top: 5px; }
+.doc-actions { grid-template-columns: repeat(2,1fr); }
+.doc-actions button { min-height: 46px; }
+.doc-actions .close-action { grid-column: 1/-1; }
+.item input { transition: border-color .2s, box-shadow .2s; }
+.item input:focus,.sheet input:focus,.sheet select:focus,.sheet textarea:focus { outline: 0; border-color: #4c766a; box-shadow: 0 0 0 3px #4c766a1c; }
+
+@media(max-width:620px) {
+  #quoteDocument { padding: 8px; }
+  .quote-paper { padding: 20px 16px; border-radius: 13px; }
+  .quote-paper .document-head { display: grid; }
+  .quote-meta { text-align: left; min-width: 0; }
+  .quote-client { grid-template-columns: 1fr; gap: 10px; }
+  .quote-row { grid-template-columns: 1fr 48px 85px; }
+  .quote-row .unit-price { display: none; }
+  .quote-controls,.doc-actions { grid-template-columns: 1fr; }
+  .doc-actions .close-action { grid-column: auto; }
+  .quote-footer { display: block; }
+}
