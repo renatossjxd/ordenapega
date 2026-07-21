@@ -1,0 +1,11 @@
+.pdf-document {
+  width: 190mm;
+  background: #fff;
+  color: var(--ink);
+  padding: 12mm;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.pdf-document .document-lines div {
+  break-inside: avoid;
+}
