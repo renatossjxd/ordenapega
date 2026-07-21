@@ -1,0 +1,20 @@
+.plan-menu-button {
+  border: 1px solid var(--line)!important;
+  background: #fff!important;
+  color: var(--green)!important;
+  border-radius: 10px!important;
+  padding: 8px 11px!important;
+  font-size: 12px;
+  font-weight: 850;
+  white-space: nowrap;
+}
+
+.plan-menu-button.trial { background: #fff9dc!important; }
+.plan-menu-button.active { background: #e8f4e9!important; color: #286b38!important; }
+.plan-menu-button.expired { background: #fff0ed!important; color: #9d3328!important; }
+
+@media(max-width:580px) {
+  .plan-menu-button { padding: 8px!important; }
+  .account #logoutBtn { font-size: 0; }
+  .account #logoutBtn:after { content: 'Salir'; font-size: 12px; }
+}
